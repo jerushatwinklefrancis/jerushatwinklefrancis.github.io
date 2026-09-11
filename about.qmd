@@ -1,0 +1,22 @@
+---
+title: "About"
+---
+
+## 🌏 Background
+
+I'm Twinkle, originally from India and currently pursuing my Master of Data Science at UBC. Before MDS, I worked as a DevOps Engineer, building and automating cloud infrastructure, improving deployment pipelines, and solving the kind of problems that usually begin with, *"It was working fine yesterday..."* Along the way, I found myself becoming increasingly curious about the data behind the systems, which eventually led me to data science.
+
+## 🧠 Why Data Science?
+
+For me, data science is where curiosity meets creativity. I love understanding how things work, asking way too many "why?" questions, and turning messy information into meaningful insights. What excites me most is that there's always something new to learn—whether it's a machine learning model, a visualization technique, or a completely different way of thinking about a problem. I enjoy building things that are both useful and a little bit c🕶️l.
+
+## 🎈 Fun Facts
+
+- 🤖 I'll happily spend hours exploring new AI tools just to see what they're capable of.
+- 🧩 I enjoy solving puzzles — whether they're coding bugs or everyday problems.
+- 🌎 Moving from India to Canada for MDS has been one of the biggest adventures of my life.
+- ☕ I've accepted that every "five-minute fix" in programming has a mysterious way of becoming a two-hour adventure.
+
+## 🎯 Current Mission
+
+Survive MDS one milestone at a time, build projects that make me proud, and graduate with a portfolio that reflects both my technical skills and my curiosity. Bonus points if I can have some fun along the way. 🚀

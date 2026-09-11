@@ -1,0 +1,9 @@
+---
+title: "Twinkle Francis"
+---
+![](images/twynky.jpeg){width=250px}
+Hey there! I'm Twinkle.
+
+Powered by coffee, curiosity, and a love for technology, I'm currently pursuing my Master of Data Science at UBC. Before this adventure, I worked as a DevOps Engineer in India. I enjoy building things, asking way too many "why?" questions, and turning data into meaningful insights. I'm on a quest to level up my data science skills, build impactful projects, and have some fun along the way.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
