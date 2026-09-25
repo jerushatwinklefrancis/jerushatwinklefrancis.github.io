@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My First Weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nTwinkle Francis\n\n\n\n\n\nNo matching items"
+    "text": "Exploring the mtcars Dataset with R\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nJerusha Twinkle Francis Abraham\n\n\n\n\n\n\n\n\n\n\n\n\nExploring Palmer Penguins with Python\n\n\n\n\n\n\n\n\nSep 24, 2026\n\n\nJerusha Twinkle Francis Abraham\n\n\n\n\n\n\n\n\n\n\n\n\nMy First Weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nTwinkle Francis\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -12,6 +12,48 @@
     "title": "Twinkle Francis",
     "section": "",
     "text": "Hey there! I’m Twinkle.\nPowered by coffee, curiosity, and a love for technology, I’m currently pursuing my Master of Data Science at UBC. Before this adventure, I worked as a DevOps Engineer in India. I enjoy building things, asking way too many “why?” questions, and turning data into meaningful insights. I’m on a quest to level up my data science skills, build impactful projects, and have some fun along the way.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "posts/r-mtcars/index.html",
+    "href": "posts/r-mtcars/index.html",
+    "title": "Exploring the mtcars Dataset with R",
+    "section": "",
+    "text": "In this post, I explore the built-in mtcars dataset using R. The goal is to understand the relationship between fuel efficiency and other vehicle characteristics.\nData source: The mtcars dataset is included with base R and is documented in the R datasets package."
+  },
+  {
+    "objectID": "posts/r-mtcars/index.html#introduction",
+    "href": "posts/r-mtcars/index.html#introduction",
+    "title": "Exploring the mtcars Dataset with R",
+    "section": "",
+    "text": "In this post, I explore the built-in mtcars dataset using R. The goal is to understand the relationship between fuel efficiency and other vehicle characteristics.\nData source: The mtcars dataset is included with base R and is documented in the R datasets package."
+  },
+  {
+    "objectID": "posts/r-mtcars/index.html#explore-the-dataset",
+    "href": "posts/r-mtcars/index.html#explore-the-dataset",
+    "title": "Exploring the mtcars Dataset with R",
+    "section": "Explore the dataset",
+    "text": "Explore the dataset\n\nhead(mtcars)\n\n                   mpg cyl disp  hp drat    wt  qsec vs am gear carb\nMazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4\nMazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4\nDatsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1\nHornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1\nHornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2\nValiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1"
+  },
+  {
+    "objectID": "posts/r-mtcars/index.html#summary-statistics",
+    "href": "posts/r-mtcars/index.html#summary-statistics",
+    "title": "Exploring the mtcars Dataset with R",
+    "section": "Summary statistics",
+    "text": "Summary statistics\nThe summary below provides an overview of the numerical variables in the dataset.\n\nsummary(mtcars)\n\n      mpg             cyl             disp             hp       \n Min.   :10.40   Min.   :4.000   Min.   : 71.1   Min.   : 52.0  \n 1st Qu.:15.43   1st Qu.:4.000   1st Qu.:120.8   1st Qu.: 96.5  \n Median :19.20   Median :6.000   Median :196.3   Median :123.0  \n Mean   :20.09   Mean   :6.188   Mean   :230.7   Mean   :146.7  \n 3rd Qu.:22.80   3rd Qu.:8.000   3rd Qu.:326.0   3rd Qu.:180.0  \n Max.   :33.90   Max.   :8.000   Max.   :472.0   Max.   :335.0  \n      drat             wt             qsec             vs        \n Min.   :2.760   Min.   :1.513   Min.   :14.50   Min.   :0.0000  \n 1st Qu.:3.080   1st Qu.:2.581   1st Qu.:16.89   1st Qu.:0.0000  \n Median :3.695   Median :3.325   Median :17.71   Median :0.0000  \n Mean   :3.597   Mean   :3.217   Mean   :17.85   Mean   :0.4375  \n 3rd Qu.:3.920   3rd Qu.:3.610   3rd Qu.:18.90   3rd Qu.:1.0000  \n Max.   :4.930   Max.   :5.424   Max.   :22.90   Max.   :1.0000  \n       am              gear            carb      \n Min.   :0.0000   Min.   :3.000   Min.   :1.000  \n 1st Qu.:0.0000   1st Qu.:3.000   1st Qu.:2.000  \n Median :0.0000   Median :4.000   Median :2.000  \n Mean   :0.4062   Mean   :3.688   Mean   :2.812  \n 3rd Qu.:1.0000   3rd Qu.:4.000   3rd Qu.:4.000  \n Max.   :1.0000   Max.   :5.000   Max.   :8.000  \n\n\nThe summary statistics show that the dataset contains a wide range of horsepower, fuel efficiency, and vehicle weights, making it useful for exploratory data analysis."
+  },
+  {
+    "objectID": "posts/r-mtcars/index.html#relationship-between-horsepower-and-fuel-efficiency",
+    "href": "posts/r-mtcars/index.html#relationship-between-horsepower-and-fuel-efficiency",
+    "title": "Exploring the mtcars Dataset with R",
+    "section": "Relationship between horsepower and fuel efficiency",
+    "text": "Relationship between horsepower and fuel efficiency\nThe scatter plot below shows the relationship between horsepower and fuel efficiency (miles per gallon).\n\nplot(\n  mtcars$hp,\n  mtcars$mpg,\n  xlab = \"Horsepower\",\n  ylab = \"Miles per gallon\",\n  pch = 19\n)\n\n\n\n\n\n\n\nFigure 1: Horsepower versus miles per gallon."
+  },
+  {
+    "objectID": "posts/r-mtcars/index.html#conclusion",
+    "href": "posts/r-mtcars/index.html#conclusion",
+    "title": "Exploring the mtcars Dataset with R",
+    "section": "Conclusion",
+    "text": "Conclusion\nIn this analysis, I explored the built-in mtcars dataset using R. I examined the dataset, reviewed summary statistics, and visualized the relationship between horsepower and fuel efficiency. The scatter plot shows that cars with higher horsepower generally tend to have lower fuel efficiency."
   },
   {
     "objectID": "posts/first-weeks/index.html",
@@ -26,6 +68,48 @@
     "title": "My First Weeks in MDS",
     "section": "",
     "text": "Me before MDS: “I’ve got this.”\nMe after Week 2: “Who invited Git, Quarto, Bash, Python, R and five deadlines to the same party?” 😭\nI knew MDS would be challenging, but I didn’t expect it to hit the gas pedal on day one. Somewhere between orientation and my first assignment, I realized that “I’ll catch up tomorrow” is a dangerous sentence.\nThe funny part? Every time I think I’ve finally figured something out, the course casually introduces three new things I’ve never heard of before. It’s a constant cycle of confusion, Googling, tiny victories, and celebrating because my terminal finally stopped yelling at me.\nWould I choose this chaos again? Absolutely. Ask me again during quiz week… and the answer might depend on how much coffee I’ve had. ☕😄\n\n\n\nMy first days at UBC."
+  },
+  {
+    "objectID": "posts/python-penguins/index.html",
+    "href": "posts/python-penguins/index.html",
+    "title": "Exploring Palmer Penguins with Python",
+    "section": "",
+    "text": "In this post, I explore the Palmer Penguins dataset using Python. The goal is to understand the characteristics of different penguin species through summary statistics and visualizations.\nData source: Palmer Penguins dataset by Allison Horst, available at https://allisonhorst.github.io/palmerpenguins/"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#introduction",
+    "href": "posts/python-penguins/index.html#introduction",
+    "title": "Exploring Palmer Penguins with Python",
+    "section": "",
+    "text": "In this post, I explore the Palmer Penguins dataset using Python. The goal is to understand the characteristics of different penguin species through summary statistics and visualizations.\nData source: Palmer Penguins dataset by Allison Horst, available at https://allisonhorst.github.io/palmerpenguins/"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#load-the-dataset",
+    "href": "posts/python-penguins/index.html#load-the-dataset",
+    "title": "Exploring Palmer Penguins with Python",
+    "section": "Load the dataset",
+    "text": "Load the dataset\n\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\npenguins.head()\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\n0\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\n1\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\n2\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\n3\nAdelie\nTorgersen\nNaN\nNaN\nNaN\nNaN\nNaN\n2007\n\n\n4\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#basic-information",
+    "href": "posts/python-penguins/index.html#basic-information",
+    "title": "Exploring Palmer Penguins with Python",
+    "section": "Basic information",
+    "text": "Basic information\n\nprint(f\"Number of rows: {penguins.shape[0]}\")\nprint(f\"Number of columns: {penguins.shape[1]}\")\n\npenguins.describe()\n\nNumber of rows: 344\nNumber of columns: 8\n\n\n\n\n\n\n\n\n\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nyear\n\n\n\n\ncount\n342.000000\n342.000000\n342.000000\n342.000000\n344.000000\n\n\nmean\n43.921930\n17.151170\n200.915205\n4201.754386\n2008.029070\n\n\nstd\n5.459584\n1.974793\n14.061714\n801.954536\n0.818356\n\n\nmin\n32.100000\n13.100000\n172.000000\n2700.000000\n2007.000000\n\n\n25%\n39.225000\n15.600000\n190.000000\n3550.000000\n2007.000000\n\n\n50%\n44.450000\n17.300000\n197.000000\n4050.000000\n2008.000000\n\n\n75%\n48.500000\n18.700000\n213.000000\n4750.000000\n2009.000000\n\n\nmax\n59.600000\n21.500000\n231.000000\n6300.000000\n2009.000000\n\n\n\n\n\n\n\nThe dataset contains measurements for different penguin species. The summary statistics provide an overview of the numerical variables, including bill length, bill depth, flipper length, and body mass."
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#relationship-between-bill-length-and-flipper-length",
+    "href": "posts/python-penguins/index.html#relationship-between-bill-length-and-flipper-length",
+    "title": "Exploring Palmer Penguins with Python",
+    "section": "Relationship between bill length and flipper length",
+    "text": "Relationship between bill length and flipper length\nThe scatter plot below shows the relationship between bill length and flipper length for different penguin species.\n\nimport matplotlib.pyplot as plt\n\nfor species in penguins[\"species\"].unique():\n    subset = penguins[penguins[\"species\"] == species]\n    plt.scatter(\n        subset[\"bill_length_mm\"],\n        subset[\"flipper_length_mm\"],\n        label=species,\n        alpha=0.7\n    )\n\nplt.xlabel(\"Bill length (mm)\")\nplt.ylabel(\"Flipper length (mm)\")\nplt.legend()\nplt.show()\n\n\n\n\n\n\n\nFigure 1: Bill length versus flipper length for Palmer Penguins."
+  },
+  {
+    "objectID": "posts/python-penguins/index.html#conclusion",
+    "href": "posts/python-penguins/index.html#conclusion",
+    "title": "Exploring Palmer Penguins with Python",
+    "section": "Conclusion",
+    "text": "Conclusion\nIn this analysis, I explored the Palmer Penguins dataset using Python. I examined the size of the dataset, generated summary statistics, and visualized the relationship between bill length and flipper length. The scatter plot suggests that different penguin species have distinct physical characteristics, making this dataset useful for exploratory data analysis and visualization."
   },
   {
     "objectID": "about.html",

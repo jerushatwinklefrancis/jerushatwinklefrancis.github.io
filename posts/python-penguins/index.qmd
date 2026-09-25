@@ -1,0 +1,66 @@
+---
+title: "Exploring Palmer Penguins with Python"
+author: "Jerusha Twinkle Francis Abraham"
+date: 2026-09-24
+categories: [Python, Data Analysis]
+---
+
+## Introduction
+
+In this post, I explore the Palmer Penguins dataset using Python. The goal is to understand the characteristics of different penguin species through summary statistics and visualizations.
+
+**Data source:** Palmer Penguins dataset by Allison Horst, available at https://allisonhorst.github.io/palmerpenguins/
+
+## Load the dataset
+
+```{python}
+#| message: false
+#| warning: false
+
+from palmerpenguins import load_penguins
+
+penguins = load_penguins()
+
+penguins.head()
+```
+
+## Basic information
+
+```{python}
+
+print(f"Number of rows: {penguins.shape[0]}")
+print(f"Number of columns: {penguins.shape[1]}")
+
+penguins.describe()
+```
+
+The dataset contains measurements for different penguin species. The summary statistics provide an overview of the numerical variables, including bill length, bill depth, flipper length, and body mass.
+
+## Relationship between bill length and flipper length
+
+The scatter plot below shows the relationship between bill length and flipper length for different penguin species.
+
+```{python}
+#| label: fig-penguin-scatter
+#| fig-cap: "Bill length versus flipper length for Palmer Penguins."
+
+import matplotlib.pyplot as plt
+
+for species in penguins["species"].unique():
+    subset = penguins[penguins["species"] == species]
+    plt.scatter(
+        subset["bill_length_mm"],
+        subset["flipper_length_mm"],
+        label=species,
+        alpha=0.7
+    )
+
+plt.xlabel("Bill length (mm)")
+plt.ylabel("Flipper length (mm)")
+plt.legend()
+plt.show()
+```
+
+## Conclusion
+
+In this analysis, I explored the Palmer Penguins dataset using Python. I examined the size of the dataset, generated summary statistics, and visualized the relationship between bill length and flipper length. The scatter plot suggests that different penguin species have distinct physical characteristics, making this dataset useful for exploratory data analysis and visualization.
