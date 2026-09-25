@@ -1,0 +1,52 @@
+---
+title: "Exploring the mtcars Dataset with R"
+author: "Jerusha Twinkle Francis Abraham"
+date: 2026-09-24
+categories: [R, Data Analysis]
+---
+
+## Introduction
+
+In this post, I explore the built-in `mtcars` dataset using R. The goal is to understand the relationship between fuel efficiency and other vehicle characteristics.
+
+**Data source:** The `mtcars` dataset is included with base R and is documented in the R datasets package.
+
+## Explore the dataset
+
+```{r}
+#| message: false
+#| warning: false
+
+head(mtcars)
+```
+
+## Summary statistics
+
+The summary below provides an overview of the numerical variables in the dataset.
+
+```{r}
+summary(mtcars)
+```
+
+The summary statistics show that the dataset contains a wide range of horsepower, fuel efficiency, and vehicle weights, making it useful for exploratory data analysis.
+
+## Relationship between horsepower and fuel efficiency
+
+The scatter plot below shows the relationship between horsepower and fuel efficiency (miles per gallon).
+
+```{r}
+#| label: fig-mtcars-scatter
+#| fig-cap: "Horsepower versus miles per gallon."
+
+plot(
+  mtcars$hp,
+  mtcars$mpg,
+  xlab = "Horsepower",
+  ylab = "Miles per gallon",
+  pch = 19
+)
+```
+
+## Conclusion
+
+In this analysis, I explored the built-in `mtcars` dataset using R. I examined the dataset, reviewed summary statistics, and visualized the relationship between horsepower and fuel efficiency. The scatter plot shows that cars with higher horsepower generally tend to have lower fuel efficiency.
